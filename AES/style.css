@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1; /* Background lebih cerah, lebih tajam */
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #5a6a74; /* Warna lebih tajam dari abu-abu */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    background: #6b7a82; /* Warna lebih tajam, memberi kontras lebih baik */
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #7a8d94; /* Warna hover lebih tajam, tetapi tetap lembut */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #5a6a74; /* Warna teks lebih tajam */
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="file"] {
+    padding: 5px;
+}
+
+form button {
+    background: #7a8d94; /* Warna tombol lebih tajam */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #5a6a74; /* Warna lebih gelap saat hover */
+}
+
+footer {
+    background: #5a6a74;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Hero Section untuk beranda */
+.hero-section {
+    background: linear-gradient(60deg, #7a8d94, #a0b2b2); /* Gradasi lebih tajam */
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h2 {
+    font-size: 2.0em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.0em;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.cta-button {
+    background: #6b7a82; /* Warna tombol lebih tajam */
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #5a6a74; /* Warna lebih gelap saat hover */
+    transform: translateY(-5px);
+}
+
+/* Info Section untuk penjelasan AES */
+.info-section {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.info-section h3 {
+    color: #5a6a74; /* Warna teks lebih tajam */
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.info-section p, .info-section ul {
+    font-size: 1.0em;
+    line-height: 1.6;
+    color: #333; /* Warna teks lebih gelap untuk kontras yang lebih tajam */
+}
+
+.info-section ul {
+    padding-left: 20px;
+}
+
+.info-section ul li {
+    margin-bottom: 10px;
+}
+
+.info-section ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #7a8d94; /* Warna ikon lebih tajam */
+}
+
+
+@media (max-width: 768px) {
+    .hero-section h2 {
+        font-size: 2em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    .info-section {
+        padding: 20px;
+    }
+
+    .info-section h3 {
+        font-size: 1.5em;
+    }
+}
+
+footer {
+    background: #5a6a74;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
